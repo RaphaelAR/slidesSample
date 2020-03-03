@@ -92,12 +92,3 @@ knitr::include_graphics("/Users/raphaelrodriguez/Box/PhD/mastersThesis/Writing/M
 ```{r, out.height="500px"}
 knitr::include_graphics("/Users/raphaelrodriguez/Box/PhD/mastersThesis/Writing/Masters IST/EBM_graphs/Screen Shot 2020-01-23 at 11.54.23 AM.png")
 ```
-
-
----
-
-This is a slide without a header.
-
-```{r, out.height="500px"}
-knitr::include_graphics("img/sleic.jpg")
-```
