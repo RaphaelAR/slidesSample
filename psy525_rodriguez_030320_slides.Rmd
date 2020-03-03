@@ -67,18 +67,13 @@ knitr::opts_chunk$set(echo = FALSE)
 - 117,000 entries; 400 variables
 
 ## CIEBA
-Concurrent Implicit-Explicit Black preference Attitude
-*CIEBA = (implicit1_z + explicit1_z + explicit4_z)/3*
-
-*implicit1 = IAT raw score*
-
-*explicit1_z = explicit1 (normalized)*
-
-*explicit2_z = explicit2 (normalized)*
-
-*explicit3_z = explicit3 (normalized)*
-
-*explicit4_z = explicit2_z – explicit 3_z*
+Concurrent Implicit-Explicit Black preference Attitude <br/>
+*CIEBA = (implicit1_z + explicit1_z + explicit4_z)/3*<br/>
+*implicit1 = IAT raw score*<br/>
+*explicit1_z = explicit1 (normalized)*<br/>
+*explicit2_z = explicit2 (normalized)*<br/>
+*explicit3_z = explicit3 (normalized)*<br/>
+*explicit4_z = explicit2_z – explicit 3_z*<br/>
 
 # Results
 
