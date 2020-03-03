@@ -1,0 +1,103 @@
+---
+title: "Improving the Predictability of Racial Preference Attitudes"
+subtitle: "Using Machine Learning Models to Predict Concurrent Implicit and Explicit Black Attitudes"
+author: "Raphael Rodriguez"
+date: "`r Sys.time()`"
+output:
+  ioslides_presentation:
+    incremental: false
+    widescreen: true
+    smaller: true
+    transition: default
+    logo: img/psu-psych.png
+    css: css/ioslides.css
+  slidy_presentation:
+    font_adjustment: +1
+    duration: 30
+    footer: "Copyright (c) 2020, Raphael A Rodriguez"
+  beamer_presentation:
+    theme: "AnnArbor"
+    colortheme: "dolphin"
+    fonttheme: "structurebold"
+  powerpoint_presentation: default
+  revealjs::revealjs_presentation:
+    self_contained: true
+    incremental: false
+    theme: simple
+    transition: none
+    reveal_plugins: ["notes", "zoom"]
+    reveal_options:
+      slideNumber: true
+      previewLinks: false
+      center: true
+      touch: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Introduction
+
+## Abstract
+
+- Applying novel machine learning techniques to big data in social psychology by a) establishing a more predictable variable of attitudes toward Black people, and b) creating a single model which integrates five previously established stereotype and prejudicial measures
+- Random Forest Regressor (python, sklearn); Explainable Boosting Machine (python, Microsoft)
+- Social distance, victim blaming, egalitarianism, intergroup anxiety, blatant negative stereotypes
+
+## Machine Learning in Social Sciences
+- Goal of psychological science as the quest to understand human behavior — to explain the cognitive causations and predict future behaviors
+- Too much focus placed on causations
+- Machine learning and big data should be used to focus on predictions
+
+## Prejudice and Stereotype Measures
+
+- Social distance scale is one earliest of these measures and was designed to quantify the desired separation from a stigmatized group
+- Intergroup anxiety is directly correlated with intergroup relations
+- Egalitarianism promotes communalism and equality
+- Protestant work ethic values individualism and self-reliance
+- knowledge of existing negative stereotypes as well as personal acceptance of those stereotypes leads to blatant prejudices against the perceived inferior out-group
+
+# Methods
+
+## IAT
+
+- projectimplicit.org
+- Race (White over Black preference), 2018
+- 117,000 entries; 400 variables
+
+## CIEBA
+Concurrent Implicit-Explicit Black preference Attitude
+*CIEBA = (implicit1_z + explicit1_z + explicit4_z)/3
+implicit1 = IAT raw score
+explicit1_z = explicit1 (normalized)
+explicit2_z = explicit2 (normalized)
+explicit3_z = explicit3 (normalized)
+explicit4_z = explicit2_z – explicit 3_z*
+
+# Results
+
+## Random Forest Regression
+Variable  | r
+------------- | -------------
+CIEBA  | .604
+Explicit  | .569
+Implicit  | .331
+
+## Explainable Boosting Machine
+```{r, out.height="500px"}
+knitr::include_graphics("/Users/raphaelrodriguez/Box/PhD/mastersThesis/Writing/Masters IST/EBM_graphs/Screen Shot 2020-01-23 at 11.53.25 AM.png")
+```
+
+```{r, out.height="500px"}
+knitr::include_graphics("/Users/raphaelrodriguez/Box/PhD/mastersThesis/Writing/Masters IST/EBM_graphs/Screen Shot 2020-01-23 at 11.54.23 AM.png")
+```
+
+
+---
+
+This is a slide without a header.
+
+```{r, out.height="500px"}
+knitr::include_graphics("img/sleic.jpg")
+```
